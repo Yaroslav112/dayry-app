@@ -1,0 +1,127 @@
+.items-container {
+    min-width: 500px;
+    max-width: 1000px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
+    margin-top: 40px;
+    height: calc(100% + 180px);;
+}
+
+.items-text {
+    text-align: left;
+    font-weight: normal;
+    color: gray;
+    font-size: 35px;
+    padding: 15px;
+}
+
+.form {
+    margin: 10px 10px;
+    display: flex;
+}
+
+.form-input {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 77%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    font-family: sans-serif;
+}
+
+.items-button {
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #17a2b8;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    color: white;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.items-button:hover {
+    color: #fff;
+    background-color: #138496;
+    border-color: #117a8b;
+}
+.list {
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+
+.selected-item {
+    border-left: 4px solid deeppink;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px 0 20px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.quantity-comments {
+    margin-right: 17px;
+    color: #fff;
+    background-color: #17a2b8;
+    padding: 2px 5px 1px 5px;
+    display: inline-block;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.4rem;
+}
+
+.delete-button {
+    border: 1px solid red;
+    color: red;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.delete-button:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+

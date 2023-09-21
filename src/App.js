@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import AsideBar from "./components/aside-bar";
+import Items from "./components/items";
+import Comments from "./components/comments";
+import { Provider } from "react-redux";
+import store from "./store";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [selectedItemId, setSelectedItemId] = useState(null);
+
+    return (
+        <Provider store={store}>
+            <div className='App'>
+                <div className='container'>
+                    <AsideBar />
+                    <Items onItemSelect={setSelectedItemId} />
+                    <Comments itemId={selectedItemId} />
+                </div>
+            </div>
+        </Provider>
+    );
 }
 
 export default App;
